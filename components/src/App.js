@@ -10,6 +10,8 @@ import { UserProvider } from './context/userComponent';
 import ChildComponent from './context/ChildComponent';
 import Name from './ErrorBoundary/Name';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import ClickCounter from './HigherOrderFunction/ClickCounter';
+import HoverCounter from './HigherOrderFunction/HoverCounter';
 
 const LazyComponent = lazy(() => import('./components/LazyComponent'));
 
@@ -34,6 +36,8 @@ function App() {
         <Name name="Raj" /><br />
         <Name name={22} />
       </ErrorBoundary>
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
