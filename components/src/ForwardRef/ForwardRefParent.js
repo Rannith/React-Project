@@ -8,11 +8,15 @@ class ForwardRefParent extends Component {
         this.refInput = React.createRef();
     }
 
+    handleClick = () => {
+        this.refInput.current.focus();
+    }
+
     render() {
         return (
             <div>
-                <ForwardRef />
-                <button onClick={this.handleClick} >Get Value</button>
+                <ForwardRef ref={this.refInput} />
+                <button onClick={this.handleClick} >Focus Input</button>
             </div>
         )
     }
