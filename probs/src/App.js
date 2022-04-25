@@ -1,11 +1,14 @@
 
 import './App.css';
 import Profile from './components/Profile';
+import IndexPortal from './portals/IndexPortal';
+import PortalDemo from './portals/PortalDemo';
 
 function App() {
+
   return (
     <div className="App">
-      <Profile name = "Rannith" team = "LAMP" >
+      {/* <Profile name = "Rannith" team = "LAMP" >
         <p>From department of Electrical and Electronics Engineering</p>
         <button>About More</button>
       </Profile>
@@ -16,7 +19,8 @@ function App() {
       <Profile name = "Deva" team = "EBA">
         <p>From Department of Electrical and Communication Engineering</p>
         <button>About More</button>
-      </Profile>
+      </Profile> */}
+        <IndexPortal className="wrapper" /> 
     </div>
   );
 }
