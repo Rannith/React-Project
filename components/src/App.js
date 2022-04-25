@@ -10,7 +10,12 @@ import { UserProvider } from './context/userComponent';
 import ChildComponent from './context/ChildComponent';
 import Name from './ErrorBoundary/Name';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+<<<<<<< HEAD
 import ForwardRefParent from './ForwardRef/ForwardRefParent';
+=======
+import ClickCounter from './HigherOrderFunction/ClickCounter';
+import HoverCounter from './HigherOrderFunction/HoverCounter';
+>>>>>>> af8773e960669c59c02ff2e414fe3cad12a4d307
 
 const LazyComponent = lazy(() => import('./components/LazyComponent'));
 
@@ -35,7 +40,12 @@ function App() {
         <Name name="Raj" /><br />
         <Name name={22} />
       </ErrorBoundary>
+<<<<<<< HEAD
       <ForwardRefParent />
+=======
+      <ClickCounter />
+      <HoverCounter />
+>>>>>>> af8773e960669c59c02ff2e414fe3cad12a4d307
     </div>
   );
 }
