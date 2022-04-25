@@ -10,6 +10,7 @@ import { UserProvider } from './context/userComponent';
 import ChildComponent from './context/ChildComponent';
 import Name from './ErrorBoundary/Name';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import ForwardRefParent from './ForwardRef/ForwardRefParent';
 
 const LazyComponent = lazy(() => import('./components/LazyComponent'));
 
@@ -34,6 +35,7 @@ function App() {
         <Name name="Raj" /><br />
         <Name name={22} />
       </ErrorBoundary>
+      <ForwardRefParent />
     </div>
   );
 }
