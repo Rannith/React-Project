@@ -12,6 +12,7 @@ function PreviousHook() {
     }
 
     const out = () => {
+        wicket <= 9 &&
         setWicket(
             wicket + 1
         )
