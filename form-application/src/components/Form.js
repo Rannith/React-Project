@@ -55,6 +55,7 @@ class Form extends Component {
             productData.push(newProduct);
         } else {
             let productIndex = this.state.productIndex;
+            console.log(productName);
             productData[productIndex].productName = productName;
             productData[productIndex].productId = productId;
             productData[productIndex].productAmount = productAmount;
@@ -73,7 +74,7 @@ class Form extends Component {
 
     render() {
 
-        let productData = this.state.productData;
+        let productData = Array.from(this.state.productData);
 
         return (
             <>
@@ -97,13 +98,15 @@ class Form extends Component {
                     <button onClick={this.handleSubmit}>Submit</button>
                 </form>
                 <table>
-                    <tr>
-                        <th>Index</th>
-                        <th>Product Name</th>
-                        <th>Product Id</th>
-                        <th>Product Price</th>
-                        <th>Number of Product</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Product Name</th>
+                            <th>Product Id</th>
+                            <th>Product Price</th>
+                            <th>Number of Product</th>
+                        </tr>
+                    </thead>
                     {
                         productData.map((product,index) => <tr key={index}>
                             <td>{index+1}</td>
