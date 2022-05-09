@@ -1,5 +1,41 @@
 .App {
   text-align: center;
+  background-color: #c1c3c6;
 }
 
+.primaryNav {
+  background-color: #282c34;
+  padding: 16px 32px;
+}
 
+.primaryNav a {
+  margin-right: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+.primaryNav a.active {
+  font-weight: bold;
+  color: white;
+}
+
+.homePage {
+  height: 800px;
+}
+
+.addUser {
+  max-width: 40rem;
+  padding: 30;
+  margin: 0% 30%;
+  height: 800px;
+}
+
+.homeContainer {
+  margin: 10%;
+}
+
+.homeContainer h1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
