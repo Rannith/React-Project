@@ -37,18 +37,44 @@
   }
 }
 
-nav {
+.primaryNav {
   background-color: #282c34;
   padding: 16px 32px;
 }
 
-nav a {
+.primaryNav a {
   margin-right: 16px;
   color: gray;
   text-decoration: none;
 }
 
-nav a.active {
+.primaryNav a.active {
   font-weight: bold;
   color: white;
+}
+
+.secondaryNav {
+  padding: 16px 32px;
+}
+
+.secondaryNav a {
+  margin-right: 16px;
+  color: #282c34;
+  text-decoration: none;
+}
+
+.secondaryNav a.active {
+  font-weight: bold;
+  color: black;
+}
+
+.outLet {
+  border: #282c34 2px solid;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 20rem;
+  text-align: center;
+  list-style: none;
+  text-align: center;
 }
