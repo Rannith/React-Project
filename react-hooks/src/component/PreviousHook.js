@@ -26,6 +26,7 @@ function PreviousHook() {
 
     const fourRun = () => {
         for(let i = 0;i < 4;i++) {
+            debugger
             setruns(prevruns => prevruns + 1)
         }
     }

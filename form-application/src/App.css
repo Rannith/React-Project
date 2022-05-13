@@ -27,11 +27,11 @@
   max-width: 40rem;
   padding: 30;
   margin: 0% 30%;
-  height: 800px;
+  height: 100vh;
 }
 
 .homeContainer {
-  margin: 10%;
+  margin: 5%;
 }
 
 .homeContainer h1 {
